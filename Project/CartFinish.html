@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styleCart.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FindMyMed</title>
+</head>
+<body>
+    <p class="cart">Carrinho</p><hr class="line"/>
+
+    <div class="container-finish">
+        <div class="pay-method">
+            <p class="payment">Método de Pagamento</p>
+            <div class="all-methods">
+                <div class="boton">
+                    <input class="botao" type="checkbox"><br>
+                    <input class="botao" type="checkbox"><br>
+                    <input class="botao" type="checkbox"><br>
+                    <input class="botao" type="checkbox"><br>
+                </div>
+                <div class="methods">
+                    <p class="mbway">MbWay</p>
+                    <p class="mbway">PayPal</p>
+                    <p class="mbway">Multibanco</p>
+                    <p class="mbway">Pagamento na Recolha</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line-pay"></div>
+
+        <div class="info">
+            <p class="vat">Número de Contribuinte</p>
+            <input class="vat-box" type="tel">
+
+            <div class="total">
+                <p class="tot">Preço Total</p>
+                <p class="tot-box">49,83€</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-conclude">
+        <a class="finish" href="Home.html">Finalizar</a>
+    </div>
+
+
+
+    <!-- Barra de Topo -->
+    <div class="topBar">
+        <span class="name">FindMyMed</span>
+    </div>
+    <div class="topBar2">
+        <span class="user">Olá User123</span>
+    </div>
+
+    <!-- Menu Aberto -->
+    <div class="navbar" id="navbar--0">
+        <li>
+            <a class="menuTitle" id="btn--menu" onclick="myMenuOpen()"><pre>Menu <i class="fa-solid fa-bars"></pre></i></a>
+            <a class="homeTitle" href="Home.html"><pre>Início <i class="fa-solid fa-house"></pre></i></a>
+            <a class="productsTitle" href="products.html"><pre>Produtos <i class="fa-solid fa-clipboard-list"></pre></i></a>
+            <a class="searchTitle" href="search.html"><pre>Pesquisar <i class="fa-solid fa-magnifying-glass"></pre></i></a>
+            <a class="cartTitle" href="Cart.html"><pre>Carrinho <i class="fa-solid fa-cart-shopping"></pre></i></a>
+            <a class="profileTitle"><pre>Perfil <i class="fa-solid fa-user"></pre></i></a>
+            <a class="logoutTitle" href="register.html"><pre>Logout <i class="fa-solid fa-arrow-right-from-bracket"></pre></i></a>
+        </li>
+    </div>
+
+    <!-- Menu Aberto Profile -->
+    <div class="navbarP" id="navbar--2">
+        <li>
+            <a href="Profile.html"><pre><i class="fa-solid fa-user">  Perfil</pre></i></a>
+            <a href="Calendar.html"><pre><i class="fa-solid fa-calendar">  Calendario</pre></i></a>
+            <a href="Orders.html"><pre><i class="fa-solid fa-bag-shopping">  Encomendas</pre></i></a>
+            <a href="Reminder.html"><pre><i class="fa-solid fa-bell">  Lembretes</pre></i></a>
+            <a href="Support.html"><pre><i class="fa-solid fa-headset">  Apoio Cliente</pre></i></a>
+        </li>
+    </div>
+
+    <!-- Menu Fechado -->
+    <div class="navbarF" id="navbar--1">
+        <li>
+            <a class="menuL" onclick="myMenuOpen()"><i class="fa-solid fa-bars"></i></a>
+            <a class="roundL" href="Home.html"><i class="fa-solid fa-house"></i></a>
+            <a class="borderL" href="Products.html"><i class="fa-solid fa-clipboard-list"></i></a>
+            <a class="borderL" href="Search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="borderL"  href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="roundL" id="profile" onclick="mouseOverIt()" ><i class="fa-solid fa-user"></i></a>
+            <a  class="borderL" href="Home.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </li>
+    </div>
+
+    <!-- Menu Fechado Profile -->
+    <div class="navbarPF" id="navbar--3">
+        <li>
+            <a href="Profile.html"><i class="fa-solid fa-user"></i></a>
+            <a href="Calendar.html"><i class="fa-solid fa-calendar"></i></a>
+            <a href="Orders.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="Reminder.html"><i class="fa-solid fa-bell"></i></a>
+            <a href="Support.html"><i class="fa-solid fa-headset"></i></a>
+        </li>
+    </div>
+    
+<script src="script.js"></script>
+</body>

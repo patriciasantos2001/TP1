@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.initial{
+    font-family: 'Comfortaa';
+    -webkit-text-stroke: #77a4a0 8px;
+    color: #77a4a0;
+    font-size: 100px;
+    text-align: center;
+    display: block;
+    margin-top: 20%;
+}
+
+.bar {
+    width: 50%;
+    background-color: #215757;
+}
+  
+.myBar {
+    margin-top: 20px;
+    width: 1%;
+    height: 15px;
+    background-color: #77a4a0;
+}
+
+.navbar {
+    width: 250px; 
+    height: 100%;
+    list-style-type: none; /* removing bullerts from list */
+    background-color: #215757;
+    top: 0;
+    margin: 0;
+    padding-right: 5px;
+    position: fixed;
+    overflow: auto;
+}
+   /* Styling the links */	 
+.navbar li {
+    width: 100%; 
+    background-color: #77a4a0;
+    display: block;	  
+    color: #215757;
+    stroke: #215757;
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    text-align: center;
+}
+
+.navbar li .roundBorder:hover, .navbar li .borderRound:hover {
+    background: #215757;
+    color: #77a4a0;
+    height: 50px;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.navbar li .roundBorder, .navbar li .borderRound  {
+    height: 50px;
+    border-radius: 25px;
+    align-items: center;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menuTitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.roundBorder {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 125px;
+}
+.borderRound {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navbar li a:hover:not(.active){
+    background: #215757;
+    color: #77a4a0;
+}
+
+.menu, .homeTitle, .productsTitle, .searchTitle, .cartTitle, .loginTitle, .registerTitle {
+    padding-right: 15px;
+}
+
+/* .name{
+    font-family: 'Comfortaa';
+    color: #5259AF;
+    font-size: 200px;
+    text-align: center;
+    -webkit-text-stroke: #5259AF 15px;
+    align-items: center;
+    padding-top: 10%;
+} */
+
+.bestSellerTitle {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 45px;
+    font-family: 'Comfortaa';
+    color: #215757;
+    -webkit-text-stroke: #215757 1px;
+    align-items: center;
+}
+
+.line {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px solid #215757;
+    margin-top: 10px;
+}
+
+.bestSeller {
+    white-space: nowrap;
+    margin-top: 80px;
+    margin-left: 170px;
+    margin-right: 120px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+  
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.bestSeller > div {
+    padding-left: 80px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.bestSellerScroll {
+    white-space: nowrap;
+    padding-left: 50px;
+    max-width: 70%;
+    text-align: center;
+    display: flex;
+}
+
+.product {
+    display: inline-block;
+    border: 2px solid #215757;
+    width: 250px;
+    height: 350px;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.img {
+    margin-left: 35%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: block;
+}
+
+.description {
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    white-space: pre-line;
+    display: block;
+}
+
+.price {
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    -webkit-text-stroke: #000 1px;
+    padding-top: 20px;
+    display: block;
+}
+
+.addCart li {
+    display: inline-flex;
+    justify-content: center;
+    width: 85%;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.addCartButton:hover {
+    background: #215757;
+    color: #fff;
+    font-weight: bold;
+}
+
+.addCartButton {
+    color: #fff;
+    background-color: #77a4a0;
+    border-radius: 25px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.addToCart {
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.newsTitle {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 70px;
+    font-family: 'Comfortaa';
+    color: #77a4a0;
+    -webkit-text-stroke: #77a4a0 2px;
+    align-items: center;
+}
+
+.news {
+    white-space: nowrap;
+    margin-top: 80px;
+    margin-left: 170px;
+    margin-right: 120px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.new > div {
+    padding-left: 80px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.newsScroll {
+    white-space: nowrap;
+    padding-left: 80px;
+    max-width: 70%;
+    text-align: center;
+    display: flex;
+}
+
+
+.navbar2 {
+    width: 60px; 
+    height: 100%;
+    list-style-type: none; /* removing bullerts from list */
+    background-color: #77a4a0;
+    top: 0;
+    margin: 0;
+    padding-right: 5px;
+    position: fixed;
+    overflow: auto;
+}
+   
+.navbar2 li {
+    width: 100%; 
+    background-color: #77a4a0;
+    display: block;	  
+    color: #215757;
+    stroke: #215757;
+    padding: 5px; 
+    text-decoration: none; 
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    text-align: center;
+}
+
+.navbar2 li .roundL, .navbar2 li .borderL  {
+    height: 50px;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.navbar2 li .roundL:hover, .navbar2 li .borderL:hover {
+    background: #215757;
+    color: #77a4a0;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.menuL {
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.roundL {
+    display: block;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 125px;
+}
+
+.borderL {
+    display: block;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.product:hover{
+    border-radius: 25px;
+    -moz-box-shadow: 0 0 10px #77a4a0;
+    -webkit-box-shadow: 0 0 10px #77a4a0;
+    box-shadow: 0 0 10px #77a4a0;
+}

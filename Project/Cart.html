@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styleCart.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FindMyMed</title>
+</head>
+<body>
+    <p class="cart">Carrinho</p><hr class="line"/>
+
+    <div class="container">
+        <div class="product-container">
+            <img class="prod-img" src="C:\Users\Utilizador\Desktop\LESI\PW\TP1\Imagens\Products\hyloGel.png">
+            <div class="prod-info">
+                <p class="prod-name">Hylo Gel</p><br>
+                <p class="prod-local"><b>Localidade : </b>Barcelos</p><br>
+                <p class="prod-pharm"><b>Farmácia : </b>Fármacia Oliveira<br><b>Rua : </b>Rua António Augusto 7<br><b>CEP : </b>4750-327</p><br>               
+            </div>
+        </div>
+        <div class="container-more">
+            <div class="distance">
+                <p class="prod-dist"><b>Distância</b></p>
+                <p class="dist-dist"><b>1,7 km</b></p>
+            </div>
+            <div class="quantity">
+                <p class="prod-quant"><b>Quantidade</b></p>
+                <span class="plus-minus"><i class="fa-solid fa-circle-plus"></i><p class="quant-quant"><b>1</b></p><i class="fa-solid fa-circle-minus"></i></span>
+            </div>
+        </div>
+        <div class="price-info">
+            <div class="price-unit">
+                <p class="price-title"><b>Preço Unitário</b></p>
+                <p class="prod-price">12,05€</p>
+                <p class="price-title2"><b>Total Produto</b></p>
+                <p class="prod-price">12,05€</p>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="line-prod">
+
+    <div class="container-two">
+        <div class="product-container">
+            <img class="prod-img" src="C:\Users\Utilizador\Desktop\LESI\PW\TP1\Imagens\Products\pilexil.jpg">
+            <div class="prod-info">
+                <p class="prod-name">Champô Pilexil</p><br>
+                <p class="prod-local"><b>Localidade : </b>Barcelos, Arcozelo</p><br>
+                <p class="prod-pharm"><b>Farmácia : </b>Fármacia da Avenida<br><b>Rua : </b>Rua José Paixão<br><b>CEP : </b>4750-683</p><br>               
+            </div>
+        </div>
+        <div class="container-more">
+            <div class="distance">
+                <p class="prod-dist"><b>Distância</b></p>
+                <p class="dist-dist"><b>2 km</b></p>
+            </div>
+            <div class="quantity">
+                <p class="prod-quant"><b>Quantidade</b></p>
+                <span class="plus-minus"><i class="fa-solid fa-circle-plus"></i><p class="quant-quant"><b>2</b></p><i class="fa-solid fa-circle-minus"></i></span>
+            </div>
+        </div>
+        <div class="price-info">
+            <div class="price-unit">
+                <p class="price-title"><b>Preço Unitário</b></p>
+                <p class="prod-price">18,89€</p>
+                <p class="price-title2"><b>Total Produto</b></p>
+                <p class="prod-price">37,78€</p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line-price">
+
+    <div class="total-price">
+        <div class="points-used">
+            <p class="unit-price"><b>Pontos Usados</b></p>
+            <p class="price-tot"><b>Preço Total</b></p>
+        </div>
+        <div class="price-total">
+            <p class="price">20 pts</p>
+            <p class="price">49,83€</p>
+        </div>
+    </div>
+
+    <div class="button">
+        <a class="finish" href="CartFinish.html">Finalizar</a>
+    </div>
+
+
+    <!-- Barra de Topo -->
+    <div class="topBar">
+        <span class="name">FindMyMed</span>
+    </div>
+    <div class="topBar2">
+        <span class="user">Olá User123</span>
+    </div>
+
+    <!-- Menu Aberto -->
+    <div class="navbar" id="navbar--0">
+        <li>
+            <a class="menuTitle" id="btn--menu" onclick="myMenuOpen()"><pre>Menu <i class="fa-solid fa-bars"></pre></i></a>
+            <a class="homeTitle" href="Home.html"><pre>Início <i class="fa-solid fa-house"></pre></i></a>
+            <a class="productsTitle" href="products.html"><pre>Produtos <i class="fa-solid fa-clipboard-list"></pre></i></a>
+            <a class="searchTitle" href="search.html"><pre>Pesquisar <i class="fa-solid fa-magnifying-glass"></pre></i></a>
+            <a class="cartTitle" href="Cart.html"><pre>Carrinho <i class="fa-solid fa-cart-shopping"></pre></i></a>
+            <a class="profileTitle"><pre>Perfil <i class="fa-solid fa-user"></pre></i></a>
+            <a class="logoutTitle" href="register.html"><pre>Logout <i class="fa-solid fa-arrow-right-from-bracket"></pre></i></a>
+        </li>
+    </div>
+
+    <!-- Menu Aberto Profile -->
+    <div class="navbarP" id="navbar--2">
+        <li>
+            <a href="Profile.html"><pre><i class="fa-solid fa-user">  Perfil</pre></i></a>
+            <a href="Calendar.html"><pre><i class="fa-solid fa-calendar">  Calendario</pre></i></a>
+            <a href="Orders.html"><pre><i class="fa-solid fa-bag-shopping">  Encomendas</pre></i></a>
+            <a href="Reminder.html"><pre><i class="fa-solid fa-bell">  Lembretes</pre></i></a>
+            <a href="Support.html"><pre><i class="fa-solid fa-headset">  Apoio Cliente</pre></i></a>
+        </li>
+    </div>
+
+    <!-- Menu Fechado -->
+    <div class="navbarF" id="navbar--1">
+        <li>
+            <a class="menuL" onclick="myMenuOpen()"><i class="fa-solid fa-bars"></i></a>
+            <a class="roundL" href="Home.html"><i class="fa-solid fa-house"></i></a>
+            <a class="borderL" href="Products.html"><i class="fa-solid fa-clipboard-list"></i></a>
+            <a class="borderL" href="Search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="borderL"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="roundL" id="profile" onclick="mouseOverIt()" ><i class="fa-solid fa-user"></i></a>
+            <a class="borderL" href="Home.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </li>
+    </div>
+
+    <!-- Menu Fechado Profile -->
+    <div class="navbarPF" id="navbar--3">
+        <li>
+            <a href="Profile.html"><i class="fa-solid fa-user"></i></a>
+            <a href="Calendar.html"><i class="fa-solid fa-calendar"></i></a>
+            <a href="Orders.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="Reminder.html"><i class="fa-solid fa-bell"></i></a>
+            <a href="Support.html"><i class="fa-solid fa-headset"></i></a>
+        </li>
+    </div>
+    
+<script src="script.js"></script>
+</body>
